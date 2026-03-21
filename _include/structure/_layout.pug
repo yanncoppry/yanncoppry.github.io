@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+
+
+    title Aire | Page d'atterrissage !
+    link(rel="stylesheet" href="_include/assets/css/app.css")
+
+
+  body
+    .app
+        include _mixins.pug
+        include _header.pug
+
+        block content
+
+        include _footer.pug
+
+        script(src='_include/assets/js/library/jquery.js')
+        script(src='_include/assets/js/app.js')
+        script(src='_include/assets/js/form.js')
+
+        
