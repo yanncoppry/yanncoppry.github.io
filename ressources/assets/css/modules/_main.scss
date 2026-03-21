@@ -3,5 +3,8 @@ main {
     section {
         padding:$big-pad;
         article {}
+        @media all and (max-width: 500px) {
+            padding:$medium-pad;
+          }
     }
 }

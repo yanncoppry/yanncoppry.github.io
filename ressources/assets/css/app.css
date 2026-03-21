@@ -138,3 +138,8 @@ button a {
 main section {
   padding: 70px;
 }
+@media all and (max-width: 500px) {
+  main section {
+    padding: 50px;
+  }
+}
