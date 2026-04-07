@@ -135,6 +135,12 @@ button a {
   display: none;
 }
 
+header {
+  background-color: #222222;
+  height: 90px;
+  width: 100%;
+}
+
 main section {
   padding: 70px;
 }
