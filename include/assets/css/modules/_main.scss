@@ -23,6 +23,9 @@ main {
           &:nth-child(5) {
             background:$quintesss-color;
           }
+          a {
+            font-weight:900
+          }
         }
       }
     }
