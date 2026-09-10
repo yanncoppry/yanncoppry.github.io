@@ -1,0 +1,95 @@
+/* FONT-FAMILY VARIABLES */
+/* FONT-SIZE VARIABLES */
+/* FONT-WEIGHT VARIABLES */
+/* COLOR VARIABLES */
+/* OTHERS COLOR VARIABLES */
+/* PADDING VARIABLES */
+/* MIXINS */
+/* ESSENTIALS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../fonts/icomoon/style.css";
+@import "modules/form.css";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.response {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media all and (max-width: 1040px) {
+  .response {
+    width: 100%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+u {
+  text-underline-offset: auto;
+}
+
+/* HEADER */
+/* MAIN */
+main section.banner ul.nav {
+  display: flex;
+}
+main section.banner ul.nav li {
+  width: 20%;
+  height: 100vh;
+}
+main section.banner ul.nav li:nth-child(1) {
+  background: #EF476F;
+}
+main section.banner ul.nav li:nth-child(2) {
+  background: #FFD166;
+}
+main section.banner ul.nav li:nth-child(3) {
+  background: #06D6A0;
+}
+main section.banner ul.nav li:nth-child(4) {
+  background: #118AB2;
+}
+main section.banner ul.nav li:nth-child(5) {
+  background: #073B4C;
+}
+
+/* FOOTER */
