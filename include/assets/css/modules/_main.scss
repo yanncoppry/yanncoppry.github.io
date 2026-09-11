@@ -5,26 +5,60 @@ main {
     &.banner {
       ul.nav {
         display:flex;
-        li {
+        @media all and (max-width: 780px) {
+          flex-direction:column;
+          li.parent {
+            width:100% !important;
+            height:20vh !important;
+            padding-top:initial !important;
+            justify-content: center !important;
+            &>a {
+              font-size: 4vw !important;
+            }
+            ul.child {
+              font-size:2vw !important;
+            }
+          }
+        }
+        li.parent {
+          padding:2vw; 
+          padding-top:50vh;
           width:20%;
           height:100vh;
+          display: flex;
+          align-content: center;
+          
+          flex-direction: column;
+          
           &:nth-child(1) {
             background:$first-color;
+            color:$quinte-color;
           }
           &:nth-child(2) {
             background:$second-color;
+            color:$first-color;
           }
           &:nth-child(3) {
             background:$third-color;
+            color:$second-color;
           }
           &:nth-child(4) {
             background:$quart-color;
+            color:$third-color;
           }
           &:nth-child(5) {
-            background:$quintesss-color;
+            background:$quinte-color;
+            color:$quart-color;
           }
-          a {
-            font-weight:900
+          &>a {
+            font-family:$bold-font;
+            font-size:2.5vw;
+            text-transform:uppercase;
+          }
+          ul.child {
+            font-family:$bold-font;
+            font-size:.85vw;
+            text-transform:uppercase;
           }
         }
       }

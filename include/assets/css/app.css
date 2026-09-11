@@ -7,7 +7,7 @@
 /* MIXINS */
 /* ESSENTIALS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "../fonts/icomoon/style.css";
+@import "../fonts/GalanoGrotesque/stylesheet.css";
 @import "modules/form.css";
 *,
 *::after,
@@ -21,7 +21,7 @@
 html {
   width: 100%;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "galano_grotesqueregular";
   color: #222;
   font-size: 16px;
   font-weight: 300;
@@ -72,24 +72,61 @@ u {
 main section.banner ul.nav {
   display: flex;
 }
-main section.banner ul.nav li {
+@media all and (max-width: 780px) {
+  main section.banner ul.nav {
+    flex-direction: column;
+  }
+  main section.banner ul.nav li.parent {
+    width: 100% !important;
+    height: 20vh !important;
+    padding-top: initial !important;
+    justify-content: center !important;
+  }
+  main section.banner ul.nav li.parent > a {
+    font-size: 4vw !important;
+  }
+  main section.banner ul.nav li.parent ul.child {
+    font-size: 2vw !important;
+  }
+}
+main section.banner ul.nav li.parent {
+  padding: 2vw;
+  padding-top: 50vh;
   width: 20%;
   height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
-main section.banner ul.nav li:nth-child(1) {
+main section.banner ul.nav li.parent:nth-child(1) {
   background: #EF476F;
+  color: #073B4C;
 }
-main section.banner ul.nav li:nth-child(2) {
+main section.banner ul.nav li.parent:nth-child(2) {
   background: #FFD166;
+  color: #EF476F;
 }
-main section.banner ul.nav li:nth-child(3) {
+main section.banner ul.nav li.parent:nth-child(3) {
   background: #06D6A0;
+  color: #FFD166;
 }
-main section.banner ul.nav li:nth-child(4) {
+main section.banner ul.nav li.parent:nth-child(4) {
   background: #118AB2;
+  color: #06D6A0;
 }
-main section.banner ul.nav li:nth-child(5) {
+main section.banner ul.nav li.parent:nth-child(5) {
   background: #073B4C;
+  color: #118AB2;
+}
+main section.banner ul.nav li.parent > a {
+  font-family: "galano_grotesquebold";
+  font-size: 2.5vw;
+  text-transform: uppercase;
+}
+main section.banner ul.nav li.parent ul.child {
+  font-family: "galano_grotesquebold";
+  font-size: 0.85vw;
+  text-transform: uppercase;
 }
 
 /* FOOTER */
